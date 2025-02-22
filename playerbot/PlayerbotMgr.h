@@ -3,7 +3,6 @@
 #include "PlayerbotHolder.h"
 
 #include "Common.h"
-#include "Chat.h"
 
 class Player;
 
