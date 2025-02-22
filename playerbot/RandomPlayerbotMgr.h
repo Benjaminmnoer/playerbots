@@ -1,6 +1,8 @@
 #pragma once
 
-class RandomPlayerbotMgr
+#include "PlayerbotHolder.h"
+
+class RandomPlayerbotMgr : PlayerbotHolder
 {
     static RandomPlayerbotMgr &instance()
     {

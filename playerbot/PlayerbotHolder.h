@@ -14,4 +14,4 @@ public:
     void OnPlayerLogin(Player *player);
     Player *GetPlayerBot(uint32 guid) const;
     virtual void MovePlayerBot(uint32 guid, PlayerbotHolder *newHolder);
-}
+};

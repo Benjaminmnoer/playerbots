@@ -1,11 +1,13 @@
 #pragma once
 
+#include "PlayerbotHolder.h"
+
 #include "Common.h"
+#include "Chat.h"
 
 class Player;
-class Team;
 
-class PlayerbotMgr
+class PlayerbotMgr : PlayerbotHolder
 {
 public:
     static PlayerbotMgr &instance()
@@ -14,6 +16,6 @@ public:
         return instance;
     }
     void HandleCommand(uint32 type, const std::string &text, Player &fromPlayer, std::string channelName = "", Team team = TEAM_BOTH_ALLOWED, uint32 lang = LANG_UNIVERSAL);
-1};
+};
 
 #define sPlayerbotMgr PlayerbotMgr::instance()

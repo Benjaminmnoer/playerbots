@@ -9,4 +9,12 @@ set(LIBRARY_SRCS
 
 add_library(${LIBRARY_NAME} STATIC ${LIBRARY_SRCS})
 
+target_link_libraries(${LIBRARY_NAME}
+    PRIVATE shared
+)
+
+target_include_directories(${LIBRARY_NAME}
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
 set_target_properties(${LIBRARY_NAME} PROPERTIES PROJECT_LABEL "PlayerBots")
