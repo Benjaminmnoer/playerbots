@@ -2,7 +2,7 @@
 
 #include "PlayerbotHolder.h"
 
-class RandomPlayerbotMgr : PlayerbotHolder
+class RandomPlayerbotMgr : public PlayerbotHolder
 {
 public:
     static RandomPlayerbotMgr &instance()

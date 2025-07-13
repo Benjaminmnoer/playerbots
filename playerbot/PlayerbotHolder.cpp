@@ -8,6 +8,10 @@ PlayerbotHolder::~PlayerbotHolder()
 {
 }
 
+void AddPlayerBot(uint32 playerGuid, uint32 masterAccount)
+{
+}
+
 void PlayerbotHolder::OnPlayerLogout(Player *player)
 {
 }

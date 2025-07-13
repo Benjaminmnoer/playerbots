@@ -6,7 +6,7 @@
 
 class Player;
 
-class PlayerbotMgr : PlayerbotHolder
+class PlayerbotMgr : public PlayerbotHolder
 {
 public:
     static PlayerbotMgr &instance()
